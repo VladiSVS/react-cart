@@ -1,0 +1,61 @@
+
+.contentItems {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 300px 300px 300px;
+    gap: 30px;
+}
+
+.card {
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    background: #fff;
+    padding: 20px;
+}
+
+.card img {
+    width: 260px;
+    height: 340px;
+    object-fit: cover;
+}
+
+.card figcaption {
+    margin: 20px 0;
+}
+
+.toCart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.toCart h1 {
+    font-size: 1.5em;
+}
+
+.toCart i {
+    cursor: pointer;
+    font-size: 2em;
+}
+
+.toCart i:hover {
+    color: rgb(0,128,0);
+    transition: 0.2s;
+}
+
+.editItem i{
+    position: absolute;
+    cursor: pointer;
+    font-size: 1.5em;
+}
+
+@media (max-width: 768px) {
+    .contentItems {
+        grid-template-columns: 300px 300px;
+    }
+}
+
+@media (max-width: 576px) {
+    .contentItems {
+        grid-template-columns: 300px ;
+    }
+}

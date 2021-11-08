@@ -1,0 +1,137 @@
+
+.cartList li{
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 300px 300px 300px;
+    height: 150px;
+    margin-bottom: 2em;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    background: #fff;
+}
+
+.cartList {
+    width: 950px;
+}
+
+.cartList li h1 {
+    font-size: 1em;
+}
+
+.cartList img {
+    width: 100px;
+    margin-right: 20px;
+}
+
+.cartList li > div {
+    display: flex;
+    align-items: center;
+}
+
+.cartList li > div:first-of-type {
+    justify-content: flex-start;
+}
+
+.cartList li > div:first-of-type {
+    justify-content: flex-start;
+}
+
+.cartList li > div:nth-of-type(2) {
+    justify-content: center;
+}
+
+.cartList li h1 {
+    font-size: 2em;
+}
+
+.cartList li > div:last-of-type {
+    justify-content: flex-end;
+}
+
+/* counterItem */
+.counterItem {
+    display: flex;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.value-button {
+    border: 1px solid #ddd;
+    margin: 0px;
+    width: 40px;
+    text-align: center;
+    padding: 11px 0;
+    background: #eee;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.value-button:hover {
+  cursor: pointer;
+}
+
+.counterItem #decrease {
+  margin-right: -4px;
+  border-radius: 8px 0 0 8px;
+}
+
+.counterItem #increase {
+  margin-left: -4px;
+  border-radius: 0 8px 8px 0;
+}
+
+.counterItem .m1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    width: 50px;
+}
+
+/* deleteItem */
+.deleteItem {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.deleteItem i {
+    font-size: 2em;
+    color: gray;
+}
+
+.deleteItem i:hover {
+    color: rgb(255,0,0,0.7);
+    transition: 0.2s;
+}
+
+/* totalPrice */
+.totalPrice {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 300px 300px 300px;
+    background: #fff;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    height: 80px;
+    padding: 20px;
+}
+
+.totalPrice div {
+    grid-column-start: 3;
+}
+
+.totalPrice h2 {
+    font-size: 1em;
+    text-align: right;
+    
+}
+
+.totalPrice h1 {
+    font-size: 1.5em;
+    text-align: right;
+}
