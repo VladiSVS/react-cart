@@ -69,10 +69,16 @@
     .contentItems {
         grid-template-columns: 300px 300px;
     }
+    .sort {
+        width: 630px
+    }
 }
 
 @media (max-width: 576px) {
     .contentItems {
         grid-template-columns: 300px ;
+    }
+    .sort {
+        width: 300px
     }
 }
