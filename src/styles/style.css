@@ -30,11 +30,17 @@ figure {
 
 .content {
     display: flex;
+    align-items: center;
+    flex-direction: column;
     justify-content: center;
     padding: 70px 0;
     margin-top: 70px;
 }
 
 .custom {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     padding-bottom: 70px;
 }

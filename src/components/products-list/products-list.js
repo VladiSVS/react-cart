@@ -2,10 +2,14 @@ import './products-list.css'
 
 const ProductsList = (props) => {
 
-    const { dataProduct, onAddCart, checkStyle, onChangeProduct, onIdRem } = props
+    const { dataProduct, onAddCart, checkStyle, onChangeProduct, onIdRem, sortByName, sortByPrice } = props
 
     return (
         <div className={checkStyle ? 'content' : 'custom'}>
+            <div className="sort">
+                <button onClick={() => sortByName()}>Name-Sort</button>
+                <button onClick={() => sortByPrice()}>Preis-Sort</button>
+            </div>
             <div className="contentItems">
                 {dataProduct.map(elt =>
                     <figure

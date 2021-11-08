@@ -48,6 +48,23 @@
     font-size: 1.5em;
 }
 
+.sort {
+    height: 50px;
+    width: 960px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.sort button {
+    cursor: pointer;
+    color: rgb(156, 156, 156);
+    padding: 10px;
+    border: none;
+    background: #fff;
+    margin-bottom: 10px;
+}
+
 @media (max-width: 768px) {
     .contentItems {
         grid-template-columns: 300px 300px;

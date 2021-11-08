@@ -6,7 +6,7 @@ import {
 } from "react-router-dom";
 
 import Header from '../components/header/header'
-import AddProduct from '../components/products-update/products-update'
+import UpdateProducts from '../components/products-update/products-update'
 import ProductsList from '../components/products-list/products-list'
 import Cart from '../components/cart/cart'
 import { useState, useEffect } from 'react'
@@ -61,6 +61,34 @@ const App = () => {
     setDataProduct(dataProduct.filter(elt => elt.id !== id))
   }
 
+  const sortByName = () => {
+    let arr = [...dataProduct]
+    arr.sort((a, b) => {
+      if (a.name > b.name) {
+        return 1;
+      }
+      if (a.name < b.name) {
+        return -1;
+      }
+      return 0;
+    })
+    setDataProduct(arr)
+  }
+
+  const sortByPrice = () => {
+    let arr = [...dataProduct]
+    arr.sort((a, b) => {
+      if (a.price > b.price) {
+        return 1;
+      }
+      if (a.price < b.price) {
+        return -1;
+      }
+      return 0;
+    })
+    setDataProduct(arr)
+  }
+
   useEffect(() => {
     const arr = dataProduct.filter((elt, i) => dataProduct.indexOf(elt) === i)
     setDataProduct(arr)
@@ -69,20 +97,26 @@ const App = () => {
   return (
 
     <BrowserRouter>
-      <Header cartAmountItems={cartAmountItems} />
+      <Header
+        cartAmountItems={cartAmountItems}
+      />
       <Routes>
         <Route path="/" element={
           <ProductsList
             dataProduct={dataProduct}
             onAddCart={onAddCart}
+            sortByName={sortByName}
+            sortByPrice={sortByPrice}
             checkStyle={true}
           />}
         />
         <Route path="add" element={
-          <AddProduct
+          <UpdateProducts
             dataProduct={dataProduct}
             onUpdateProducts={onUpdateProducts}
             onRemoveProduct={onRemoveProduct}
+            sortByName={sortByName}
+            sortByPrice={sortByPrice}
           />}
         />
         <Route path="cart" element={

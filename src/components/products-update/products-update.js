@@ -2,9 +2,9 @@ import './products-update.css';
 import ProductsList from '../products-list/products-list'
 import { useState } from 'react'
 
-const AddProduct = (props) => {
+const UpdateProducts = (props) => {
 
-    const { dataProduct, onUpdateProducts, onRemoveProduct } = props
+    const { dataProduct, onUpdateProducts, onRemoveProduct, sortByName, sortByPrice } = props
     const [maxId, setMaxId] = useState(dataProduct.length)
     const [checkStyle, setCheckStyle] = useState(true)
     const [product, setProduct] = useState({
@@ -91,6 +91,8 @@ const AddProduct = (props) => {
             </div>
             <ProductsList
                 onChangeProduct={onChangeProduct}
+                sortByName={sortByName}
+                sortByPrice={sortByPrice}
                 onIdRem={onIdRem}
                 dataProduct={dataProduct}
                 checkStyle={false} />
@@ -99,4 +101,4 @@ const AddProduct = (props) => {
     );
 }
 
-export default AddProduct;
+export default UpdateProducts;

@@ -11,6 +11,7 @@
 .submitForm input {
     height: 40px;
     margin-bottom: 10px;
+    padding: 0 10px;
 }
 .submitForm input:last-of-type {
     margin-bottom: 20px;
