@@ -11,7 +11,7 @@
 }
 
 .cartList {
-    width: 950px;
+    width: 960px;
 }
 
 .cartList li h1 {
@@ -32,20 +32,16 @@
     justify-content: flex-start;
 }
 
-.cartList li > div:first-of-type {
-    justify-content: flex-start;
-}
-
 .cartList li > div:nth-of-type(2) {
     justify-content: center;
 }
 
-.cartList li h1 {
-    font-size: 2em;
-}
-
 .cartList li > div:last-of-type {
     justify-content: flex-end;
+}
+
+.cartList li h1 {
+    font-size: 2em;
 }
 
 /* counterItem */

@@ -1,0 +1,5 @@
+@media (max-width: 576px) {
+    .emptyCart h1{
+        font-size: 1em;
+    }
+}

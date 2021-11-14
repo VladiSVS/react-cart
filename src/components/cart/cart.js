@@ -1,10 +1,12 @@
-import './cart.css'
-import EmptyCart from '../empty-cart/empty-cart'
+import './cart.css';
+import './cart-media.css';
+
+import EmptyCart from '../empty-cart/empty-cart';
 
 const Cart = (props) => {
 
     const { selectedProduct, onAddCart, onRemoveCart, onDeleteProductCart } = props;
-    const totalPrice = selectedProduct.reduce((a, c) => a + c.quantity * c.price, 0)
+    const totalPrice = selectedProduct.reduce((a, c) => a + c.quantity * c.price, 0);
 
     return (
         <div className="content">
@@ -36,7 +38,7 @@ const Cart = (props) => {
                     <div className="totalPrice">
                         <div>
                             <h2>ZWISCHENSUMME</h2>
-                            <h1>{totalPrice} &euro;</h1>
+                            <h1>{totalPrice.toFixed(1)} &euro;</h1>
                         </div>
                     </div>
                 </ul>}

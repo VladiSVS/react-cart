@@ -1,0 +1,30 @@
+
+@media (max-width: 1024px) {
+
+    .contentForm {
+        margin-bottom: 70px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .submitForm {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .submitForm button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 824px) {
+    .contentForm {
+        width: 630px;
+    }
+}
+
+@media (max-width: 576px) {
+    .contentForm {
+        width: 300px;
+    }
+}

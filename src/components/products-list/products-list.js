@@ -1,8 +1,9 @@
-import './products-list.css'
+import './products-list.css';
+import './products-list-media.css';
 
 const ProductsList = (props) => {
 
-    const { dataProduct, onAddCart, checkStyle, onChangeProduct, onIdRem, sortByName, sortByPrice } = props
+    const { dataProduct, onAddCart, checkStyle, onChangeProduct, onIdRem, sortByName, sortByPrice } = props;
 
     return (
         <div className={checkStyle ? 'content' : 'custom'}>

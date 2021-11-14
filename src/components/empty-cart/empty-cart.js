@@ -1,6 +1,8 @@
+import './empty-cart.css';
+
 const EmptyCart = () => {
     return (
-        <div className="content">
+        <div className="emptyCart">
             <h1>WARENKORB IST LEER</h1>
         </div>
     );
